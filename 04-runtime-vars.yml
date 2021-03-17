@@ -1,0 +1,10 @@
+- name: Demo runtimr variables
+  hosts: all
+  tasks:
+    - name: Grab uptime
+      shell: uptime
+      register: OUT
+
+    - name: Print Uptime
+      debug:
+        msg: "{{OUT}}"
