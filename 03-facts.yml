@@ -1,0 +1,6 @@
+- name: Demo on facts
+  hosts: all
+  tasks:
+    - name: Print hostname
+      debug:
+        msg: HostName = {{ anisble_hostname }}
