@@ -1,11 +1,12 @@
 - name: Demo on Play varaibles
   hosts: all
   vars:
-    URL: play.google.com
+    URL: Play variables.com
   tasks:
-    - name: Print URL
+    - name: print URL
       debug:
-      msg: URL {{ URL }}
+        msg: URL = {{ URL }}
+
 
 
 
