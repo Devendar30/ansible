@@ -9,7 +9,7 @@
 
 - name: Demo on task varaibles
   hosts: all
-    tasks:
+  tasks:
     - name: print URL
       debug:
         msg: URL = {{ URL }}
