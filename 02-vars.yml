@@ -15,12 +15,13 @@
         msg: URL = {{ URL }}
       vars:
         URL: task.example.com
+
 - name: Demo on CLI variables
-   hosts: all
-   tasks:
-     - name: Print URL1 var from CLI
-       debug:
-         msg: URL1 = {{ URL1 }}
+  hosts: all
+  tasks:
+    - name: Print URL1 var from CLI
+      debug:
+        msg: URL1 = {{ URL1 }}
 
 
 
