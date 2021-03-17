@@ -23,12 +23,12 @@
       debug:
         msg: URL1 = {{ URL1 }}
 
--name: Demo on inventory variable
- hosts: all
- tasks:
-   - name: Print URL2 from inventory
-     debug:
-       msg: URL2 = {{ URL2 }}
+- name: Demo on inventory variable
+  hosts: all
+  tasks:
+    - name: Print URL2 from inventory
+      debug:
+        msg: URL2 = {{ URL2 }}
 
 
 
