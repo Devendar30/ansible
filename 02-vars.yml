@@ -7,6 +7,16 @@
       debug:
         msg: URL = {{ URL }}
 
+- name: Demo on task varaibles
+  hosts: all
+    tasks:
+    - name: print URL
+      debug:
+        msg: URL = {{ URL }}
+      vars:
+        URL: task.example.com
+
+
 
 
 
