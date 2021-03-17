@@ -2,6 +2,6 @@
   hosts: all
   vars:
     URL: play.google.com
- tasks:
+  tasks:
   - debug:
       msg: URL {{ URL }}
