@@ -1,4 +1,4 @@
-- name: Demo on playbook
+- name: Demo in playbook
   hosts: all
   tasks:
     - debug:
