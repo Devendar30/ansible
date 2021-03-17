@@ -46,9 +46,9 @@
       prompt: Enter URL
       private: no
   tasks:
-    name: Print URL
-    debug:
-      msg: URL = {{ URL }}
+    - name: Print URL
+      debug:
+        msg: URL = {{ URL }}
 
 
 
