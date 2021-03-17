@@ -39,7 +39,7 @@
       debug:
         msg: URL_FILE = {{ URL_FILE }}
 
-- name: Prompt for input
+- name: Prompt
   hosts: all
   vars_prompt:
     - name: URL
