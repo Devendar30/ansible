@@ -39,6 +39,18 @@
       debug:
         msg: URL_FILE = {{ URL_FILE }}
 
+- name: DEmo variable using input
+  hosts: all
+  vars_prompt:
+    - name: URL
+      prompt: Enter URL
+      private: no
+  tasks:
+    name: Print URL
+    debug:
+      msg: URL = {{ URL }}
+
+
 
 
 
