@@ -31,7 +31,7 @@
         msg: URL2 = {{ URL2 }}
 
 - name: Demo on variables from file
-  hosts:
+  hosts: all
   tasks:
     - name: Print URL_FILE
       debug:
