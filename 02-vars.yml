@@ -3,7 +3,7 @@
   vars:
     URL: play.google.com
   tasks:
-    - name: print URL
+    - name: Print URL
       debug:
       msg: URL {{ URL }}
 
