@@ -30,6 +30,13 @@
       debug:
         msg: URL2 = {{ URL2 }}
 
+- name: Demo on variables from file
+  hosts:
+  tasks:
+    - name: Print URL_FILE
+      debug:
+        msg: URL_FILE = {{ URL_FILE }}
+
 
 
 
