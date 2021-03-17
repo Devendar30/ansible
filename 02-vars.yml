@@ -9,7 +9,6 @@
 
 - name: Demo on Play varaibles
   hosts: all
-
   tasks:
     - name: Print URL
       debug:
