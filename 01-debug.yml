@@ -1,5 +1,5 @@
 - name: Demo on playbook
   hosts: all
   tasks:
-    -debug:
+    - debug:
        msg: Hello World
