@@ -10,4 +10,4 @@
     - name: catalogoe
       ansible.builtin.import-role:
         name: catalogue
-      whenL APP == "catalogue"
+      when: APP == "catalogue"
