@@ -6,6 +6,7 @@
       ansible.builtin.import_role:
         name: frontend
       tags: frontend
+      when: APP == "frontend"
 
 
 
@@ -13,3 +14,4 @@
       ansible.builtin.import_role:
         name: catalogue
       tags: catalogue
+      when: APP == "catalogue"
