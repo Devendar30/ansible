@@ -1,0 +1,4 @@
+- name: Demo on privilage escalation
+  hosts: all
+  tasks:
+    - shell: id
