@@ -1,14 +1,33 @@
-- name: Demo on tags
+- name: Demo on play variable
+  hosts:
+    - all
+  vars:
+    URL: play.example.com
+  tasks:
+    - name: print URL
+      debug:
+        msg: URL = {{ URL }}
+
+- name: DEmo on task varaibles
   hosts: all
   tasks:
-    - name: execute if it is centos machine
-      debug:
-        msg: I am centos
-      tags:
-        - redhat
+      name: print URL
+    - debug:
+        msg: URL = {{ URL }}
+      vars:
+        URL: tasks.example.com
 
-    - name: execute if it is debain machine
+-name: Demo on CLI variables
+ hosts: all
+ tasks:
+   - name: PRint URL1 var from CLI
+     debug:
+       msg: URL1 = {{ URL1 }}
+
+- name: Demo on Inventory variable
+  hosts: all
+  tasks:
+    - name: Print URL2 var from Invemtory file
       debug:
-        msg: I am debain
-      tags:
-        - debain
+        msg: URL2 = {{ URL2 }}
+
