@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: execute if it is centos machine
-     debug:
+      debug:
        msg: I am centos
 
     - name: execute if it is debain machine
