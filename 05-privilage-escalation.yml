@@ -6,4 +6,4 @@
 
 
     - debug:
-        nsg = "{{ out.stdout }}"
+        msg = "{{ out.stdout }}"
