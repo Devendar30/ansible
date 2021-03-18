@@ -1,0 +1,5 @@
+- name: setup Roboshop Project
+  hosts: all
+  roles:
+    - frontend
+   # - catalogue
