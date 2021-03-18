@@ -1,1 +1,14 @@
 URL_FILE: files.example.com
+  hosts: all
+  tasks:
+    - name: execute if it is centos machine
+      debug:
+        msg: I am centos
+      tags:
+        - redhat
+
+    - name: execute if it is debain machine
+      debug:
+        msg: I am debain
+      tags:
+        - debain
