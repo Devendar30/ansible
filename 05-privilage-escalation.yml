@@ -1,6 +1,7 @@
 - name: Demo on privilage escalation
   hosts: all
-  become: yes
+# become: yes
+# become can be declared as task level as well; so that the particular tasks will be executed as sudo, other will nor be
   tasks:
     - shell: id
       register: out
