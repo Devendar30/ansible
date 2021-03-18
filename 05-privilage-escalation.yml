@@ -6,4 +6,4 @@
 
 
     - debug:
-        msg = "{{ out.stdout }}"
+        msg: = "{{ out.stdout }}"
