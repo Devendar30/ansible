@@ -3,7 +3,7 @@
   "Changes": [{
     "Action": "CREATE",
     "ResourceRecordSet": {
-      "Name": "${component}-ss.devendar.tk",
+      "Name": "${component}-aa.devendar.tk",
       "Type": "A",
       "TTL": 300,
       "ResourceRecords": [{ "Value": "${IPADDRESS}"}]
