@@ -2,3 +2,8 @@
   hosts: all
   tasks:
     - shell: id
+      register: out
+
+
+    - debug:
+        nsg = "{{ out.stdout}}"
