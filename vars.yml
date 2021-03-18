@@ -1,4 +1,4 @@
-URL_FILE: files.example.com
+- name: Demo on tags
   hosts: all
   tasks:
     - name: execute if it is centos machine
