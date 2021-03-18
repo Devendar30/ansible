@@ -7,7 +7,7 @@
         name: frontend
       when: APP == "frontend"
 
-    - name: catalogoe
+    - name: Import catalogoe
       ansible.builtin.import-role:
         name: catalogue
       when: APP == "catalogue"
