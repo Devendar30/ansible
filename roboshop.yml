@@ -6,7 +6,7 @@
       ansible.builtin.import_role:
         name: frontend
       tags:
-       - frontend
+        - frontend
       when: APP == "frontend"
 
 

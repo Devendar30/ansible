@@ -11,4 +11,8 @@
     URL: "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
     EXTRACT_DIR: /usr/share/nginx/html
 
+- name: Start Nginx service
+  systemd:
+    name: niginx
+    state: restarted
 
