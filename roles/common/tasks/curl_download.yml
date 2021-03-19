@@ -13,7 +13,7 @@
     path: "{{EXTRACT_DIR}}"
     state: directory
 
-- name:  Unarchive {{ APP }}  Component
+- name:  Unarchive {{ APP}}  Component
   ansible.builtin.unarchive:
     src: /tmp/{{APP}}.zip
     dest: "{{EXTRACT_DIR}}"
