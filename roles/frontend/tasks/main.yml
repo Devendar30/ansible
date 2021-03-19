@@ -13,6 +13,6 @@
 
 - name: Start Nginx service
   systemd:
-    name: niginx
+    name: nginx
     state: restarted
 
